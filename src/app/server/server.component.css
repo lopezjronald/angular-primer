@@ -1,0 +1,11 @@
+.server-font-size {
+  font-size: 3rem;
+}
+
+.online {
+  background-color: lightgreen;
+}
+
+.offline {
+  background-color: lightcoral;
+}

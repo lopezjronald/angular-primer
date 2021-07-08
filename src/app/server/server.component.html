@@ -1,0 +1,6 @@
+<!--<p [ngStyle]="{backgroundColor: getColor()}">{{ 'Server' }} with ID {{ getServerId() }} is {{ getServerStatus() }}</p>-->
+
+<p *ngIf="serverStatus==='online'; else offline" [ngClass]="{'server-font-size online': serverStatus === 'online'}">{{ 'Server' }} with ID {{ getServerId() }} is {{ getServerStatus() }}</p>
+<ng-template #offline>
+  <p [ngClass]="{'server-font-size offline': serverStatus === 'offline'}">{{ 'Server' }} with ID {{ getServerId() }} is {{ getServerStatus() }}</p>
+</ng-template>
